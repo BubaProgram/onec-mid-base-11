@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f78379b-ac8a-4730-a44c-7fc4ef4782a2">
+  <producedTypes>
+    <objectType typeId="7ea3f76d-1c7e-44b4-882f-27ab2b8a24d3" valueTypeId="9c302f3e-bfee-4c5a-ae0e-405c08645c0c"/>
+    <refType typeId="502e2725-675a-4a3e-b490-223a6d23fba5" valueTypeId="2bc79228-0447-4181-9dd1-3cf4ce846d5f"/>
+    <selectionType typeId="a09a7047-6d5a-449c-a2d5-ef59663b780a" valueTypeId="3cf128eb-682d-43a3-a3eb-15d98f91d08f"/>
+    <listType typeId="a030beb0-b2c1-43e8-a11d-8e5d44b4dc94" valueTypeId="8c810d0f-2b92-4284-8ac0-1a757370ce4e"/>
+    <managerType typeId="dafba00c-e640-4e80-96f8-9d6f2ea64e31" valueTypeId="02bd3527-aa0b-4f38-8d76-bc644d36b050"/>
+  </producedTypes>
+  <name>КЛ_КонтактныеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контактные лица</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КЛ_КонтактныеЛица.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.КЛ_КонтактныеЛица.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Контактное лицо</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Контактные лица</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.КЛ_КонтактныеЛица.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="f3dabed4-7a21-4723-b036-73acb67be0f9">
+    <name>КонтактныеТелефоны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактные телефоны</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <mask>9(999)999-99-99</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c426398b-b1fd-42d5-bdd4-ac4dd193368e">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КЛ_Должность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="943ef879-bcc0-468b-b72a-c87da14251cc">
+    <name>ДействуетНаОсновании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует на основании</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1f854391-4357-4fcb-be9c-2e83bbe79a98">
+    <name>Заметка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заметка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f6d25a1c-5c05-49ff-be1e-8a7315707332">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
