@@ -85,19 +85,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Должность</name>
-      <id>25</id>
+      <name>Владелец</name>
+      <id>19</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.Должность</segments>
+        <segments>Список.Owner</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ДолжностьРасширеннаяПодсказка</name>
-        <id>27</id>
+        <name>ВладелецРасширеннаяПодсказка</name>
+        <id>21</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -106,8 +106,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ДолжностьКонтекстноеМеню</name>
-        <id>26</id>
+        <name>ВладелецКонтекстноеМеню</name>
+        <id>20</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
@@ -157,19 +157,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Владелец</name>
-      <id>19</id>
+      <name>Должность</name>
+      <id>25</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Список.Owner</segments>
+        <segments>Список.Должность</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВладелецРасширеннаяПодсказка</name>
-        <id>21</id>
+        <name>ДолжностьРасширеннаяПодсказка</name>
+        <id>27</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -178,8 +178,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВладелецКонтекстноеМеню</name>
-        <id>20</id>
+        <name>ДолжностьКонтекстноеМеню</name>
+        <id>26</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
